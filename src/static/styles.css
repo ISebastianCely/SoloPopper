@@ -1,0 +1,129 @@
+:root{
+    --fuenteHeading: 'Montserrat', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #000000 ;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --gris: #B4B4B4 ;
+    --azul: #0026FE;
+    --celeste: #3b3b41  ;
+    --grisclaro: #3b3b41 ;
+    --rojo: #F93119;
+    --verde: #3AD70C;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2; /*interlineado*/
+}
+a{
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+p {
+    line-height: 2;
+}
+table {
+    font-family: var(--fuenteParrafos);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid var(--primario);
+    text-align: center;
+    padding: 1rem;
+}
+td {
+    font-size: 1.4rem;
+    margin: 0;
+
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*header*/
+.header {
+    padding: 1px;
+    background: var(--primario);
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+}
+.logo{
+    margin-top: 0px;
+    margin-bottom: -25px;
+}
+@media (max-width:768px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/*body*/
+.cuerpo {
+    background-color: var(--gris);
+}
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.sombra {
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 20px -29px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.9);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+}  
+.table-rwd {
+    min-width: 900px;
+}
+.table-container {
+    overflow-x: auto;
+}
+.elo {
+    padding: 0;
+}
+.partidas {
+    font-weight: 600;
+}
+.victorias {
+    color: var(--wr);
+    font-weight: 600;
+}
+.derrotas {
+    color: var(--rojo);
+    font-weight: 600;
+}
+.wr {
+    color: var(--verde);
+    font-weight: 600;
+}
+.emblem {
+    padding-top: -15px;
+}
+/*footer */
+.footer {
+    padding: 0.5rem;
+    font-size: 100;
+    background-color: var(--gris);
+    text-align: center;
+    margin-bottom: 0;
+}
